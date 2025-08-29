@@ -10,8 +10,9 @@
 ## Flutter Notes 
 
 ###  What is Flutter?
-- Definition:
-- Why is it useful?
+- A framework made by Google for building apps that work on the web, Android, and IOS-with one codebase.
+- Uses the Dart programming language.
+
 
 ---
 
@@ -19,18 +20,20 @@
 
 | Term             | Definition                                      | Example / Notes                          |
 |------------------|--------------------------------------------------|-------------------------------------------|
-| Widget           |                                                  |                                           |
-| MaterialApp      |                                                  |                                           |
-| Scaffold         |                                                  |                                           |
-| StatelessWidget  |                                                  |                                           |
-| StatefulWidget   |                                                  |                                           |
-| Navigator        |                                                  |                                           |
-| AppBar           |                                                  |                                           |
-| Column           |                                                  |                                           |
-| Row              |                                                  |                                           |
-| Container        |                                                  |                                           |
-| Text             |                                                  |                                           |
-| Image.network    |                                                  |                                           |
+| Widget           | Basic building block of a Flutter app.           | Text, Image, Containter, Column           |
+| MaterialApp      | The root of the app. Sets up routes and themes.  | Found in main.dart                        |
+| Scaffold         | Provides basic visual layout-like a header, body, floating button| Each screen uses it                                          |
+| StatelessWidget  | A widget that doesn't change                                                 | Most of the screen files                                          |
+| StatefulWidget   | A wdiget that can change over time                                                 | Used in MyHomePage ()                                          |
+| Navigator        | Manages screen transitions                                                 | Navigator.pushNamed(context, '/page2);                                          |
+| AppBar           | Top navigation bar                                                 | Title of each page appears here                                          |
+| Column           | vertical layout                                  |                                           |
+| Row              | horizontal layout                                |                                           |
+| Container        | wraps content with padding, margin, or color     |                                           |
+| Text             | displays text                                    |                                           |
+| Image.network    | displays images from a URL                       |                                           |
+| Padding          | adds space around a wdiget                       |                                           |
+| Center           | centers its child                                |                                           |
 
 ---
 
