@@ -34,6 +34,8 @@
 | Image.network    | displays images from a URL                       |                                           |
 | Padding          | adds space around a wdiget                       |                                           |
 | Center           | centers its child                                |                                           |
+| main()           | The function that runs the app                   | Found in main.dart                        |
+| Named Routes     | Predefined paths to navigate between screens     | '/', '/page2', '/page3', etc.             |
 
 ---
 
