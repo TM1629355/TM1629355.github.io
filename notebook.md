@@ -86,9 +86,9 @@
 |main()| A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` |Opening a game|  |
 |MaterialApp| The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  |  |
 |Scaffold| A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |A template|  |
-|Column| A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  |  |
-|Row| A widget that shows things side-by-side. | `Row(...)` |  |  |
-|Container| A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |  |  |
+|Column| A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |Stacking things|  |
+|Row| A widget that shows things side-by-side. | `Row(...)` |Putting things side by side|  |
+|Container| A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |A box|  |
 |Text| A widget to display text on the screen. | `Text('Hello')` |  |  |
 |Image.network| A widget to show an image using a link from the internet. | `Image.network('https://...')` |  |  |
 |ElevatedButton| A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |  |  |
