@@ -81,28 +81,28 @@
 
 | Term | Definition and Description | Base Structure | Real Life Example | App Example |
 |------|----------------------------|----------------|-------------------|-------------|
-|main()| A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` |Opening a game|in main.dart, void main() => runApp(MyPortfolioApp());|
-|MaterialApp| The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  |main.dart, return MaterialApp(debugShowCheckModeBanner: false, tittle: 'TSA Portfolio', and more|
+|main()| A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` |Opening a game|in main.dart, void main() => runApp(MyPortfolioApp()); |
+|MaterialApp| The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  |main.dart, return MaterialApp(debugShowCheckModeBanner: false, tittle: 'TSA Portfolio', and more |
 |Scaffold| A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |A template|in showcase.dart, return Scaffold( body: Colum( mainAxisAlignment: MainAxisAlignment.start, children: [ |
 |Column| A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |Stacking things|in showcase.dart, body: Column( mainAxisAlignment: MainAxisAlignment.start, children: [ |
-|Row| A widget that shows things side-by-side. | `Row(...)` |Putting things side by side|  |
-|Container| A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |A canvas|  |
-|Text| A widget to display text on the screen. | `Text('Hello')` |  |  |
-|Image.network| A widget to show an image using a link from the internet. | `Image.network('https://...')` |  |  |
-|ElevatedButton| A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |  |  |
-|onPressed| The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |  |  |
-|StatelessWidget| A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` |  |  |
+|Row| A widget that shows things side-by-side. | `Row(...)` |Putting things side by side|in InfoCard.dart, child: Row( |
+|Container| A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |A canvas|in home.dart, Container(, widtch: 200, height: 200, decoration: BoxDecoration( |
+|Text| A widget to display text on the screen. | `Text('Hello')` |  |in home.dart, const Text(, 'HI EVERYONE,\nWelcome to the' |
+|Image.network| A widget to show an image using a link from the internet. | `Image.network('https://...')` |  |in home.dart, child: Image.network(, 'https://placedog.net/640/480?random' |
+|ElevatedButton| A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |  |in home.dart, ElevatedButton(, onpressed: () => Navigator.pushNamed(context, '/background') |
+|onPressed| The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |  |in home.dart, ElevatedButton(, onpressed: () => Navigator.pushNamed(context, '/background') |
+|StatelessWidget| A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` |  |in home.dart, class HomeScreen extends StatelessWidget {, const HomeScreen({super.key}); |
 |StatefulWidget| A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` |  |  |
-|Navigator| Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` |  |  |
-|Padding| Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |Spacing around objects to look neater|  |
-|Center| Aligns content in the center of the screen or container. | `Center(child: ...)` |  |  |
-|Wrap| Automatically puts widgets onto a new line when there's no space. | `Wrap(children: [...])` |going from one line to the next|  |
-|@override| This marks a method as one that’s replacing a method in a parent class. | `@override` |  |  |
-|build| The special function in every widget that describes what gets drawn on the screen. | `Widget build(BuildContext context) {...}` |  |  |
-|build| Required in every widget class to describe what to show. | `build` |  |  |
-|BuildContext| A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` |  |  |
-|super.key| A keyword used to pass a value to the parent widget. | `super.key` |emailing your teacher|  |
-|const| A keyword that means the value won't change and is set once. | `const` |title|  |
+|Navigator| Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` |  |in background.dart, ElevatedButton(, onPressed: () => Navigator.pushNamed(context, '/showcase'), child: const Text('Next'), |
+|Padding| Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |Spacing around objects to look neater|in showcase.dart, Widget puppyImage(String url) {, return Padding(, padding: const EdgeInsets.all(4.0),|
+|Center| Aligns content in the center of the screen or container. | `Center(child: ...)` |  |in home.dart, @override, Widget build(BuildContext context) {, return Scaffold(, body: Center( | 
+|Wrap| Automatically puts widgets onto a new line when there's no space. | `Wrap(children: [...])` |going from one line to the next|in showcase.dart, Wrap(alignment: WrapAlignment.center, children: puppyUrls.map((url) => puppyImage(url)).toList()), |
+|@override| This marks a method as one that’s replacing a method in a parent class. | `@override` |  |in InfoCard.dart, @override, Widget build(BuildContext context) { |
+|build| The special function in every widget that describes what gets drawn on the screen. | `Widget build(BuildContext context) {...}` |  |in home.dart, @override, Widget build(BuildContext context) { |
+|build| Required in every widget class to describe what to show. | `build` |  |in home.dart, @override, Widget build(BuildContext context) { |
+|BuildContext| A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` |  |in home.dart, @override, Widget build(BuildContext context) { |
+|super.key| A keyword used to pass a value to the parent widget. | `super.key` |emailing your teacher|in showcase.dart, class ShowcaseScreen extends StatelessWidget {, const ShowcaseScreen({super.key}); |
+|const| A keyword that means the value won't change and is set once. | `const` |title|in InfoCard.dart, const InfoCard({, super.key, required this.imageUrl, required this.description, }); |
 
 
 ## Markdown Style Guide for Coding Notebooks
