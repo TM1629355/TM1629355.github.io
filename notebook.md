@@ -86,6 +86,9 @@
 | intiger overflow | Integer.MAX_VALUE + 1 == MIN.VALUE, it wraps around | | |
 | Intiger underflow | Integer.MIN_VALUE + 1 == MAX.VALUE, it wraps around | | |
 | round-off error | an approx. of the actual value, result is around to the nearest value that fits within the available bits | | |
+| Overloaded methold/function or constructor | Uses the same name, but has different parameters | Pizza(), Pizza(String toppings) 2 constructors, first is a default cheese pizza, 2nd has 1 topping | | |
+| dot notation |Methods are called on objects using a dot after the object name | object.method(value); | | |
+| Concatenate | To combine Strings with other Strings and/or variables | String greeting = "Hello" + "My name is" + name ". ";| | |
 
 [Flutter Definitions](#flutter_definitions)
 ## Flutter Definitions
