@@ -52,37 +52,37 @@
 |------|------------|--------------------------|-------------------|-------------|
 | Algorithms | Define step by step processes to follow when completing a task or solving a problem | no syntax | Make a grilled cheese | Verify user |
 | Sequencing | Define an order for when steps in an algorithm are completed | Follows 1, 2, 3 | which step comes first in making a grilled cheese | Get bread, add butter, add cheese |
-|Variable| A named container used to store a value that may change. | `var x = 5;` |  | main.dart, String title: 'TSA Portfolio'|
-|Constant| A fixed value that cannot change once set. | `const PI = 3.14;` |  | main.dart, const MyPortfolioApp ({super.key}); |
-|Data Type| The kind of value a variable holds, like numbers or text. | `int`, `String`, `bool` |  | main.dart, bool, debugShowCheckModeBanner: false, |
-|String| A sequence of characters used to represent words or text. | `"Hello World"` |  |  |
-|Integer| Whole number values. | `int age = 16;` |  |  |
-|Double| Number values with decimals. | `double age = 16.2;` |  |  |
-|Boolean| A value that can be true or false. | `bool isLoggedIn = false;` |  |  |
-|List| A collection of values in a specific order. | `List<String> names = [];` |  |  |
-|Null| A special value that means “nothing.” | `String? name = null;` |  |  |
-|Function| A reusable block of code that performs an action. | `void sayHi() { print("Hi"); }` |Turning on a car|  |
-|Parameter| The information passed into a function to change how it works. | `greet(String name)` |  |  |
-|Return| The result a function gives back. | `return total;` |  |  |
-|Scope| Where a variable or function can be used. | (No set syntax — concept-based) |  |  |
-|Class | Blueprint for creating objects with specific structure and behavior. | `class Dog {}` |  |  |
-|Object| A specific version of a class. | `Dog myDog = Dog();` |  |  |
-|Property| A variable that belongs to a class/object. | `String name;` |Limitations|  |
-|Method| A function that belongs to a class. | `void bark() {}` |  |  |
-|Constructor| A special function used to set up a class when it’s created. | `Dog(this.name);` |Knowing the design|  |
-|Abstraction| Hiding the inner workings of code so users only interact with what they need. | (Concept — not specific code) |Keyboard and monitor|  |
-|Override| Changing how a built-in or inherited function behaves. | `@override` |  |  |
-|Void| A function that does not return a value. | `void printMessage() {}` |Missing a shot|  |
-|Scanner|Creates a scanner object to take input from user|Scaner in = new Scanner(System.in);| | |
-|impornt Scanner|Gives access to Scanner class, required at top|import java.util.Scanner;| | | 
-|print line statement|prints what's in the parenthesis, adds line after|System.out.println(" ");| | |
-|print statement|prints the content in the parenthesis|System.out.print(" ");| | |
-|input nextLine|reads in a String from the user|input.nextLine();| | |
-|input nextInt|reads in an int from the user|input.nextInt();| | |
-|input nextDouble|reads in a double (decimal) from the user|input.nextDouble();| | |
-|input nextBoolean|reads in a boolean (true/false) from the user|unput.nextBoolean();| | |
-|Arithmetic operators|- + / % (modulus, returns the remainder from dividing)|    | | |
-|Compound operators (applies to the variable)|+= -= *= /= %= ++ (adds 1)|    | | |
+| Variable | A named container used to store a value that may change. | `var x = 5;` |  | main.dart, String title: 'TSA Portfolio'|
+| Constant | A fixed value that cannot change once set. | `const PI = 3.14;` |  | main.dart, const MyPortfolioApp ({super.key}); |
+| Data Type | The kind of value a variable holds, like numbers or text. | `int`, `String`, `bool` |  | main.dart, bool, debugShowCheckModeBanner: false, |
+| String | A sequence of characters used to represent words or text. | `"Hello World"` |  |  |
+| Integer | Whole number values. | `int age = 16;` |  |  |
+| Double | Number values with decimals. | `double age = 16.2;` |  |  |
+| Boolean | A value that can be true or false. | `bool isLoggedIn = false;` |  |  |
+| List | A collection of values in a specific order. | `List<String> names = [];` |  |  |
+| Null | A special value that means “nothing.” | `String? name = null;` |  |  |
+| Function | A reusable block of code that performs an action. | `void sayHi() { print("Hi"); }` |Turning on a car|  |
+| Parameter | The information passed into a function to change how it works. | `greet(String name)` |  |  |
+| Return | The result a function gives back. | `return total;` |  |  |
+| Scope | Where a variable or function can be used. | (No set syntax — concept-based) |  |  |
+| Class | Blueprint for creating objects with specific structure and behavior. | `class Dog {}` |  |  |
+| Object | A specific version of a class. | `Dog myDog = Dog();` |  |  |
+| Property | A variable that belongs to a class/object. | `String name;` |Limitations|  |
+| Method | A function that belongs to a class. | `void bark() {}` |  |  |
+| Constructor | A special function used to set up a class when it’s created. | `Dog(this.name);` |Knowing the design|  |
+| Abstraction | Hiding the inner workings of code so users only interact with what they need. | (Concept — not specific code) |Keyboard and monitor|  |
+| Override | Changing how a built-in or inherited function behaves. | `@override` |  |  |
+| Void | A function that does not return a value. | `void printMessage() {}` |Missing a shot|  |
+| Scanner |Creates a scanner object to take input from user|Scaner in = new Scanner(System.in);| | |
+| impornt Scanner |Gives access to Scanner class, required at top|import java.util.Scanner;| | | 
+| print line statement |prints what's in the parenthesis, adds line after|System.out.println(" ");| | |
+| print statement |prints the content in the parenthesis|System.out.print(" ");| | |
+| input nextLine |reads in a String from the user|input.nextLine();| | |
+| input nextInt |reads in an int from the user|input.nextInt();| | |
+| input nextDouble |reads in a double (decimal) from the user|input.nextDouble();| | |
+| input nextBoolean |reads in a boolean (true/false) from the user|unput.nextBoolean();| | |
+| Arithmetic operators |- + / % (modulus, returns the remainder from dividing)|    | | |
+| Compound operators (applies to the variable) |+= -= *= /= %= ++ (adds 1)|    | | |
 | Maximum int | The max value an int can hold: -2147483647 | Integer.MIN_VALUE | | |
 | Minimum int | The minimum value an int can hold:-2147483648 | Integer.MIN_VALUE | | |
 | intiger overflow | Integer.MAX_VALUE + 1 == MIN.VALUE, it wraps around | | |
