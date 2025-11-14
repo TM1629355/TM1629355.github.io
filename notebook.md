@@ -105,6 +105,7 @@
 
 ### String Methods Table 
 
+<img width="1291" height="457" alt="image" src="https://github.com/user-attachments/assets/c2654c91-5da1-4e7d-b6e0-5f8a75fa0995" />
 
 
 
